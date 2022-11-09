@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11e5f91a-0bbd-4d1e-9f3d-9d29c0eb7f35" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-1/4-typeСonversion/task2/task-2.js" beforeDir="false" afterPath="$PROJECT_DIR$/module-1/4-typeСonversion/task2/task-2.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +55,7 @@
       <option name="presentableId" value="Default" />
       <updated>1667982692311</updated>
       <workItem from="1667982693885" duration="1584000" />
-      <workItem from="1667984293428" duration="4417000" />
+      <workItem from="1667984293428" duration="5117000" />
     </task>
     <servers />
   </component>
@@ -89,5 +87,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="4-typeConversion task3" />
   </component>
 </project>
