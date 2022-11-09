@@ -18,4 +18,4 @@ console.log(Boolean(1), typeof(Boolean(1))); //явное
 //9
 console.log(String(001), typeof(String(001))); //явное
 //10
-console.log(Number('Hello World'), typeof(Number('Hello World'))); //явное
+console.log(Number('Hello World'), typeof(Number('Hellsdasdasdo World'))); //явное
