@@ -4,13 +4,20 @@ let clientSpentForAllTime = +prompt('Сколько клиент потрати�
 let sale = 0
 if(isNaN(clientSpentToday) || isNaN(clientSpentForAllTime)){
     alert('Сумма, которую клиент потратил за все время и которую потратил сегодня, должна быть числом! Перезагрузи страницу, чтобы повторить попытку.')
-}else{
-    clientSpentForAllTime += clientSpentToday
-    if(clientSpentForAllTime > 3000){
-        sale += 2
+}else {
+    if (clientSpentForAllTime > 100) {
+        sale += 10
     }
-    if(clientSpentForAllTime > 7000) {
-        sale += 3
+    if (clientSpentForAllTime > 300 ) {
+        sale += 10
+    }
+    if (clientSpentForAllTime > 500) {
+        sale += 10
     }
 }
-console.log(`Скидка мистера/миссис ${clientName} составляет ${sale}%`)
+    let dis = clientSpentToday / 100 * sale
+    let count = clientSpentToday - dis
+    alert(`Вам предоставляется скидка в ${sale}%!`)
+    clientSpentForAllTime += count
+    alert(`Спасибо, ${clientName}! К оплате ${count}$. За все время в нашем ресторане вы потратили ${clientSpentForAllTime}$.`)
+
