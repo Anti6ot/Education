@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="11e5f91a-0bbd-4d1e-9f3d-9d29c0eb7f35" name="Changes" comment="]\">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-1/addTaskWeek2/task1/task1.html" beforeDir="false" afterPath="$PROJECT_DIR$/module-1/addTaskWeek2/functask1/task1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-1/addTaskWeek2/task1/task1.js" beforeDir="false" afterPath="$PROJECT_DIR$/module-1/addTaskWeek2/functask1/task1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-1/addTaskWeek2/task2/callback.js" beforeDir="false" afterPath="$PROJECT_DIR$/module-1/addTaskWeek2/functask2/callback.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-1/addTaskWeek2/task2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/module-1/addTaskWeek2/functask2/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-1/addTaskWeek2/task3/goals.html" beforeDir="false" afterPath="$PROJECT_DIR$/module-1/addTaskWeek2/arrTask1/goals.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-1/addTaskWeek2/task3/goals.js" beforeDir="false" afterPath="$PROJECT_DIR$/module-1/addTaskWeek2/arrTask1/goals.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +80,7 @@
       <workItem from="1668717039138" duration="1164000" />
       <workItem from="1668769299167" duration="4440000" />
       <workItem from="1668787400920" duration="1300000" />
-      <workItem from="1668921907068" duration="15037000" />
+      <workItem from="1668921907068" duration="15986000" />
     </task>
     <servers />
   </component>
