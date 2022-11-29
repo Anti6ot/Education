@@ -53,12 +53,16 @@
       <recent name="C:\My-creative\Resultschool\module-1\6-jsBasics\task1" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Node.js.footballer.js">
     <configuration name="da.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/module-1/OtherTask/da/da.js" working-dir="$PROJECT_DIR$/module-1/OtherTask/da">
+      <method v="2" />
+    </configuration>
+    <configuration name="footballer.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/module-1/12-this/task3footballer/footballer.js" working-dir="$PROJECT_DIR$/module-1/12-this/task3footballer">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.footballer.js" />
         <item itemvalue="Node.js.da.js" />
       </list>
     </recent_temporary>
@@ -100,7 +104,8 @@
       <workItem from="1669274340602" duration="16694000" />
       <workItem from="1669540509123" duration="4848000" />
       <workItem from="1669570351784" duration="411000" />
-      <workItem from="1669649626281" duration="3589000" />
+      <workItem from="1669649626281" duration="3712000" />
+      <workItem from="1669700080853" duration="4190000" />
     </task>
     <servers />
   </component>
