@@ -20,7 +20,7 @@ class Dictionary{
        }
        showAllWords = function (){
            Object.values(this.words).forEach((el) => {
-               console.log(Object.values(el).join(' - '))
+               console.log(`${el.word} - ${el.description}` )
            })
        }
     }
