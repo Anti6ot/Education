@@ -9,6 +9,7 @@ class HardWordsDictionary extends Dictionary {
             }
         }
     }
+
 }
 
 const hardWordsDictionary = new HardWordsDictionary('Сложные слова')
