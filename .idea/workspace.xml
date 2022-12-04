@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11e5f91a-0bbd-4d1e-9f3d-9d29c0eb7f35" name="Changes" comment="]\">
-      <change afterPath="$PROJECT_DIR$/module-1/addTaskWeek4/task1This/checkChancesToWin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module-1/addTaskWeek4/task1This/checkChancesToWin.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -112,7 +110,8 @@
       <workItem from="1669974739245" duration="6487000" />
       <workItem from="1669996743249" duration="2749000" />
       <workItem from="1670049423855" duration="6792000" />
-      <workItem from="1670131790598" duration="7759000" />
+      <workItem from="1670131790598" duration="9836000" />
+      <workItem from="1670150462823" duration="4084000" />
     </task>
     <servers />
   </component>
