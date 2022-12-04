@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="11e5f91a-0bbd-4d1e-9f3d-9d29c0eb7f35" name="Changes" comment="]\">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-1/13-Class/task3Dictionary/Dictionary.js" beforeDir="false" afterPath="$PROJECT_DIR$/module-1/13-Class/task3Dictionary/Dictionary.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,20 +33,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/My-creative/Resultschool/module-1/5-WorkWithString/task2&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/My-creative/Resultschool/module-1/addTaskWeek4/task1OOP",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "vcs.Git",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\My-creative\Resultschool\module-1\addTaskWeek4\task1OOP" />
       <recent name="C:\My-creative\Resultschool\module-1\5-WorkWithString\task2" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -111,7 +113,7 @@
       <workItem from="1669996743249" duration="2749000" />
       <workItem from="1670049423855" duration="6792000" />
       <workItem from="1670131790598" duration="9836000" />
-      <workItem from="1670150462823" duration="4084000" />
+      <workItem from="1670150462823" duration="16079000" />
     </task>
     <servers />
   </component>

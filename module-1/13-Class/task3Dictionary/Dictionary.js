@@ -4,26 +4,26 @@ class Dictionary{
         this.name = name
     }
 
-       add = function (word, description) {
-            if(!this.words[word]){
-                this.words[word] = {
+    add = function (word, description) {
+        if(!this.words[word]){
+            this.words[word] = {
                 'word': word,
                 'description': description,
-                }
             }
-       }
-       remove = function (word){
-           delete this.words[word]
-       }
-       gеt = function (word){
-           return this.words[word]
-       }
-       showAllWords = function (){
-           Object.values(this.words).forEach((el) => {
-               console.log(`${el.word} - ${el.description}` )
-           })
-       }
+        }
     }
+    remove = function (word){
+        delete this.words[word]
+    }
+    gеt = function (word){
+        return this.words[word]
+    }
+    showAllWords = function (){
+        Object.values(this.words).forEach((el) => {
+            console.log(`${el.word} - ${el.description}` )
+        })
+    }
+}
 
 const dictionary = new Dictionary('Толковый словарь')
 dictionary.add('JavaScript', 'популярный язык программирования')
