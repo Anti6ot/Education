@@ -30,9 +30,9 @@ function allowVisa(arr){
 
     let array = arr.map((value) => {
         let reversePassportDate = value.passportExpiration.split('.').reverse().join('-')
-        let datePassportExp = new Date(reversePassportDate).getTime()
+        let datePassportExpInMs = new Date(reversePassportDate).getTime()
 
-        if(date < datePassportExp){
+        if(date < datePassportExpInMs){
             return value
         }
     }).filter( el => el !== 'undefined' ? el : '')
