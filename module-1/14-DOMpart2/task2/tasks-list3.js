@@ -80,9 +80,6 @@ createTaskBlock.addEventListener('submit', (event) => {
         }
     })
 
-
-
-
         if(createTaskValue == ''){
             const errorMessageBlock = document.createElement('div')
             errorMessageBlock.className = 'error-message-block'
@@ -118,11 +115,6 @@ createTaskBlock.addEventListener('submit', (event) => {
     }
 
 )
-
-// tasks.forEach( (value) => {
-//
-//     taskAdd(value.id, value.text)
-// })
 
 for (let key in tasks) {
 
