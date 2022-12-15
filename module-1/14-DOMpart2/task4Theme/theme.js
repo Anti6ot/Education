@@ -151,6 +151,8 @@ function delForTasks (taskId){
     }
 }
 
+
+
 for (let key in tasks) {
     taskAdd(tasks[key].id, tasks[key].text, key)
 }
