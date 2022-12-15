@@ -8,6 +8,22 @@
     <title>Работа с DOM</title>
 </head>
 <body>
+
+<div class="modal-overlay modal-overlay_hidden">
+    <div class="delete-modal">
+        <h3 class="delete-modal__question">
+            Вы действительно хотите удалить эту задачу?
+        </h3>
+        <div class="delete-modal__buttons">
+            <button class="delete-modal__button delete-modal__cancel-button">
+                Отмена
+            </button>
+            <button class="delete-modal__button delete-modal__confirm-button">
+                Удалить
+            </button>
+        </div>
+    </div>
+</div>
 <div id="tasks">
     <div class="tasks__wrapper">
         <form class="create-task-block">
@@ -32,7 +48,9 @@
 </div>
 
 <!--<script src="tasks-list2.js"></script>-->
-<script src="../task2/tasks-list3.js"></script>
+<!--<script src="../task2/tasks-list3.js"></script>-->
+<script src="../task3Delete/tasks-list4.js"></script>
+
 
 </body>
 </html>

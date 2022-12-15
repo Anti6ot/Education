@@ -47,13 +47,12 @@ function taskAdd(taskId, taskTxt) {
     taskItemMainContent.append(span)
 
     const button = document.createElement('button')
-
     button.className = 'task-item__delete-button default-button delete-button'
     button.textContent = 'Удалить'
-    button.dataset.dataDeleteTaskId = '5'
+    button.dataset.deleteTaskId = taskId
     taskItemMainContainer.append(button)
 
-    taskItem.dataset.dataTaskId = taskId
+    taskItem.dataset.taskId = taskId
     tasksList.append(taskItem)
 
     input.id = taskId
@@ -67,7 +66,9 @@ function taskAdd(taskId, taskTxt) {
     return taskItem
 }
 
+
 const createTaskBlock = document.querySelector('.create-task-block')
+
 createTaskBlock.addEventListener('submit', (event) => {
     event.preventDefault()
     const unicId = '' + Date.now()
@@ -80,8 +81,7 @@ createTaskBlock.addEventListener('submit', (event) => {
             duplicate = true
         }
     })
-
-        if(createTaskValue == ''){
+        if(createTaskValue === '' || createTaskValue === 'undefined' || createTaskValue === null){
             const errorMessageBlock = document.createElement('div')
             errorMessageBlock.className = 'error-message-block'
             const spanError = document.createElement('span')
@@ -114,56 +114,47 @@ createTaskBlock.addEventListener('submit', (event) => {
 
         }
 
-
-
-//тут осталось найти место для этой функции
- /*   function checkTaskNameInputOnValidation (val){
-        let duplicate = false
-
-        tasks.forEach((el) =>{
-            if(createTaskValue === el.text){
-                duplicate = true
-            }
-        })
-        if (val === '') {
-            return 'Название задачи не должно быть пустым'
-        } else if (duplicate) {
-            return 'Название задачи duble'
-        }
-        return true
-    }
-
-
-    const createTaskValue = event.target.taskName.value
-    const isValid = checkTaskNameInputOnValidation(createTaskValue)
-    const messageBlockFromDom = document.querySelector('.error-message-block')
-
-    if(isValid === 'Название задачи не должно быть пустым' || isValid === 'Название задачи duble'){
-        const errorMessageBlock = document.createElement('div')
-        errorMessageBlock.className = 'error-message-block'
-        const spanError = document.createElement('span')
-        spanError.textContent = isValid
-        createTaskBlock.append(errorMessageBlock)
-        errorMessageBlock.append(spanError)
-    }else if (isValid && messageBlockFromDom){
-        messageBlockFromDom.remove()
-        const newTask = {
-            id: unicId,
-            completed: false,
-            text: createTaskValue,
-        }
-        tasks.push(newTask)
-
-        const taskItem = taskAdd(newTask.id, newTask.text)
-        tasksList.append(taskItem)
-    }*/
-
     })
 
 
-for (let key in tasks) {
+tasksList.addEventListener('click', (event) => {
+    const taskId = event.target.dataset.deleteTaskId
+    const taskList = document.querySelector('.tasks-list')
+    const taskItem = taskList.querySelectorAll('.task-item')
+    if(taskId){
+    const modalWindowDelete = document.querySelector('.modal-overlay')
+        modalWindowDelete.classList.remove("modal-overlay_hidden")
 
-    taskAdd(tasks[key].id, tasks[key].text)
+        modalWindowDelete.addEventListener('click', (event) => {
+            const deleteBtn = document.querySelector('.delete-modal__confirm-button')
+            const cancelBtn = document.querySelector('.delete-modal__cancel-button')
+
+            if(deleteBtn.className === event.target.className) {
+                taskItem.forEach((el) => {
+                    if(taskId === el.dataset.taskId){
+                        el.remove()
+                        delForTasks(taskId)
+
+                    }
+                })
+               modalWindowDelete.classList.add("modal-overlay_hidden")
+           } else if(cancelBtn.className === event.target.className){
+                modalWindowDelete.classList.add("modal-overlay_hidden")
+            }
+        })
+    }
+})
+
+function delForTasks (taskId){
+    const index = tasks.findIndex(n => n.id === taskId)
+
+    if (index !== -1) {
+        tasks.splice(index, 1);
+    }
+}
+console.log(tasks)
+for (let key in tasks) {
+    taskAdd(tasks[key].id, tasks[key].text, key)
 }
 
 
