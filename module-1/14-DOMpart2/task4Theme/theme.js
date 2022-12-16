@@ -16,6 +16,9 @@ const tasks = [
     },
 ]
 const tasksList = document.querySelector('.tasks-list')
+const createTaskBlock = document.querySelector('.create-task-block')
+const body = document.querySelector('body')
+
 
 function taskAdd(taskId, taskTxt) {
 
@@ -66,8 +69,6 @@ function taskAdd(taskId, taskTxt) {
     return taskItem
 }
 
-const createTaskBlock = document.querySelector('.create-task-block')
-
 createTaskBlock.addEventListener('submit', (event) => {
     event.preventDefault()
     const unicId = '' + Date.now()
@@ -116,9 +117,9 @@ createTaskBlock.addEventListener('submit', (event) => {
     })
 
 tasksList.addEventListener('click', (event) => {
-    const taskId = event.target.dataset.deleteTaskId
     const taskList = document.querySelector('.tasks-list')
     const taskItem = taskList.querySelectorAll('.task-item')
+    const taskId = event.target.dataset.deleteTaskId
     if(taskId){
     const modalWindowDelete = document.querySelector('.modal-overlay')
         modalWindowDelete.classList.remove("modal-overlay_hidden")
@@ -151,7 +152,26 @@ function delForTasks (taskId){
     }
 }
 
+body.addEventListener('keydown', (event) => {
+    const taskList = document.querySelector('.tasks-list')
+    const taskItem = taskList.querySelectorAll('.task-item')
+    const buttons = document.querySelectorAll('button')
 
+    const { key } = event
+    if(key === 'Tab'){
+        body.style.background = '#24292E'
+        taskItem.forEach( el => el.style.color = '#ffffff')
+        buttons.forEach(el => el.style.border = '1px solid #ffffff')
+    }
+    else if(key === '1') {
+        body.style.background = 'initial'
+        taskItem.forEach( el => el.style.color = 'black')
+        buttons.forEach(el => el.style.border = 'none')
+
+    }
+
+
+})
 
 for (let key in tasks) {
     taskAdd(tasks[key].id, tasks[key].text, key)
