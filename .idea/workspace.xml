@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="11e5f91a-0bbd-4d1e-9f3d-9d29c0eb7f35" name="Changes" comment="]\">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-1/16-AsyncPromiseFetch/task2getUsersByIds/getUsersByIds.js" beforeDir="false" afterPath="$PROJECT_DIR$/module-1/16-AsyncPromiseFetch/task2getUsersByIds/getUsersByIds.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +129,9 @@
       <workItem from="1671172205616" duration="896000" />
       <workItem from="1671177393758" duration="2493000" />
       <workItem from="1671366354232" duration="1081000" />
-      <workItem from="1671452426045" duration="5199000" />
+      <workItem from="1671452426045" duration="5929000" />
+      <workItem from="1671620286844" duration="2285000" />
+      <workItem from="1671633896021" duration="4797000" />
     </task>
     <servers />
   </component>

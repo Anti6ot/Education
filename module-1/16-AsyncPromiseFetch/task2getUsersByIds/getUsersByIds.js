@@ -17,6 +17,7 @@ const getUsersByIds = (ids) => {
     Promise.all(requests)
         .then((responses) => {
             const dataResults = responses.map((response) => response.json())
+            console.log(dataResults)
             return Promise.all(dataResults)
         })
         .then((users) => {
