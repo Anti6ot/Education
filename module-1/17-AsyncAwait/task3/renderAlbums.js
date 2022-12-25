@@ -1,51 +1,37 @@
-const ALBUMS_URL = 'https://jsonplaceholder.typicode.com/albums'
-const body = document.body
+const ALBUMS_URL = "https://jsonplaceholder.typicode.com/albums";
+const dataContainer = document.querySelector(".data-container");
 
-
-const renderHtml = (txt) => {
-    const dataContainer = document.createElement('ol')
-    dataContainer.className = 'data-container'
-
-    const albumName = document.createElement('li')
-    albumName.textContent = txt
-
-    dataContainer.append(albumName)
-    return dataContainer
-}
+const createAlbumItem = (text) => {
+    const albumItem = document.createElement("li");
+    albumItem.innerText = text;
+    return albumItem;
+};
 
 const toggleLoader = () => {
-    const loading = document.createElement('li')
-    loading.className = 'loading'
-    loading.textContent = 'Загрузка...'
-    body.append(loading)
-}
-
-
-
+    const loaderHTML = document.querySelector("#loader");
+    const isHidden = loaderHTML.getAttribute("hidden") !== null;
+    if (isHidden) {
+        loaderHTML.removeAttribute("hidden");
+    } else {
+        loaderHTML.setAttribute("hidden", "");
+    }
+};
 
 const renderAlbums = async () => {
+    toggleLoader();
     try {
-        toggleLoader()
-        const response = await fetch(ALBUMS_URL)
-
-
-        if (!response.ok) {
-            throw new Error('Произошла ошибка в получении данных об альбомах...')
-        }
-        const result = await response.json()
-        result.forEach((el) => {
-            body.append(renderHtml(el.title))
-        })
-    } catch (err) {
-        const dataContainer = document.createElement('ol')
-        dataContainer.className = 'data-container'
-        dataContainer.textContent = err
-        body.append(dataContainer)
+        const response = await fetch(ALBUMS_URL);
+        const albums = await response.json();
+        albums.forEach((album) => {
+            const albumHTML = createAlbumItem(album.title);
+            dataContainer.append(albumHTML);
+        });
+    } catch {
+        dataContainer.innerText =
+            "Произошла ошибка в получении данных об альбомах...";
     } finally {
-        const toggle = document.querySelector('.loading')
-        toggle.remove()
+        toggleLoader();
     }
+};
 
-
-}
-renderAlbums()
+renderAlbums();

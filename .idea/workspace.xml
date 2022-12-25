@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="11e5f91a-0bbd-4d1e-9f3d-9d29c0eb7f35" name="Changes" comment="]\">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-1/17-AsyncAwait/task3/renderAlbums.html" beforeDir="false" afterPath="$PROJECT_DIR$/module-1/17-AsyncAwait/task3/renderAlbums.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-1/17-AsyncAwait/task3/renderAlbums.js" beforeDir="false" afterPath="$PROJECT_DIR$/module-1/17-AsyncAwait/task3/renderAlbums.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +134,8 @@
       <workItem from="1671620286844" duration="2285000" />
       <workItem from="1671633896021" duration="13198000" />
       <workItem from="1671769627667" duration="9650000" />
-      <workItem from="1671891587478" duration="7875000" />
+      <workItem from="1671891587478" duration="8597000" />
+      <workItem from="1671958548154" duration="1848000" />
     </task>
     <servers />
   </component>
