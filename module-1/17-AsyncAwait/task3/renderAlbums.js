@@ -11,27 +11,27 @@ const toggleLoader = () => {
     const loaderHTML = document.querySelector("#loader");
     const isHidden = loaderHTML.getAttribute("hidden") !== null;
     if (isHidden) {
-        loaderHTML.removeAttribute("hidden");
+        loaderHTML.removeAttribute("hidden")
     } else {
-        loaderHTML.setAttribute("hidden", "");
+        loaderHTML.setAttribute("hidden", "")
     }
-};
+}
 
 const renderAlbums = async () => {
-    toggleLoader();
+    toggleLoader()
     try {
-        const response = await fetch(ALBUMS_URL);
-        const albums = await response.json();
+        const response = await fetch(ALBUMS_URL)
+        const albums = await response.json()
         albums.forEach((album) => {
-            const albumHTML = createAlbumItem(album.title);
-            dataContainer.append(albumHTML);
-        });
+            const albumHTML = createAlbumItem(album.title)
+            dataContainer.append(albumHTML)
+        })
     } catch {
         dataContainer.innerText =
-            "Произошла ошибка в получении данных об альбомах...";
+            "Произошла ошибка в получении данных об альбомах..."
     } finally {
-        toggleLoader();
+        toggleLoader()
     }
-};
+}
 
-renderAlbums();
+renderAlbums()
