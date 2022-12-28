@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11e5f91a-0bbd-4d1e-9f3d-9d29c0eb7f35" name="Changes" comment="]\">
+      <change afterPath="$PROJECT_DIR$/module-1/addTaskWeek7/renderPost.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-1/17-AsyncAwait/task3/renderAlbums.js" beforeDir="false" afterPath="$PROJECT_DIR$/module-1/17-AsyncAwait/task3/renderAlbums.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +134,11 @@
       <workItem from="1671633896021" duration="13198000" />
       <workItem from="1671769627667" duration="9650000" />
       <workItem from="1671891587478" duration="8597000" />
-      <workItem from="1671958548154" duration="1929000" />
+      <workItem from="1671958548154" duration="3752000" />
+      <workItem from="1671971576091" duration="2483000" />
+      <workItem from="1672004524316" duration="19000" />
+      <workItem from="1672140408600" duration="7248000" />
+      <workItem from="1672215330923" duration="1643000" />
     </task>
     <servers />
   </component>
